@@ -6,7 +6,7 @@ This wrapper is intended to be used conventionally and with [Pythonista](https:/
 
 ## Installation ##
 
-Currently, the wrapper is only available on gitHub. After using it for a couple more weeks, I'll submit it to pypi. You can place it in any directory in your path and import as usual. To use the wrapper with an application like Keyboard Maestro, use a shell script action with something like the following:
+Currently, the wrapper is only available on FitHub. After using it for a few more weeks, I'll submit it to pypi. For now, you can place checkvist.py in any directory in your path and import as usual. To use the wrapper with an application like Keyboard Maestro, use a shell script action with something like the following:
 
     #!/usr/bin/env python
     
@@ -32,9 +32,10 @@ Currently, the wrapper is only available on gitHub. After using it for a couple 
     # get all all lists
     my_lists = cl.get_lists()
     
-## Pythonista
+## Pythonista Installation
 
-Create a new empty file and paste in checkvist.py. Name the file checkvist
+Create a new empty file and paste in checkvist.py. Name the file checkvist.
+Create a new file for your script and enter something like the following: 
 
     #!/usr/bin/env python
     import checkvist
