@@ -20,8 +20,6 @@ import pprint
 
 pp = pprint.PrettyPrinter(indent=4)
 
-
-
 auth_url = 'https://checkvist.com/auth/login.json'
 
 
@@ -35,7 +33,6 @@ class user_account:
         
         To turn on Debugger:
         cl = checkvist.user_account('account@email.com', 'akdjfdfhoihhg', bugger=1)
-
         
         """
         self.username = user_id
@@ -45,7 +42,6 @@ class user_account:
         else:
             self.bugger = False
 
-    
     
     def send_auth(self):
         """ Get authenication token.
@@ -81,11 +77,6 @@ class user_account:
         else: 
             return False
 
-    # Get users lists
-    # 
-    # my_lists = cl.get_lists()
-    # for i in my_lists:
-    #    print i['name']
         
     def get_lists(self):
         """Get all the user's lists
@@ -255,7 +246,6 @@ class user_account:
         else: return False
 
 
-
     def get_task(self, list_id, task_id, notes=''):
         """Get a specific task from a list (with or without notes)
         
@@ -339,7 +329,6 @@ class user_account:
         else: return False
 
 
-
     def import_tasks(self, list_id, import_content):
         """Add a task or tasks using the import feature.
         
@@ -360,7 +349,6 @@ class user_account:
         if r.status_code == requests.codes.ok: 
             return parsed_json
         else: return False
-
 
 
     def update_task(self, list_id, task_id, task_content='', parent_id='', tags='', due_date='', position=''):
@@ -412,6 +400,7 @@ class user_account:
             return parsed_json
         else: return False
         
+        
     def close_task(self, list_id, task_id):
         """Close Task Status
             
@@ -431,6 +420,7 @@ class user_account:
             return parsed_json
         else: return False
    
+
     def reopen_task(self, list_id, task_id):
         """Reopen Task Status
             
@@ -449,6 +439,7 @@ class user_account:
         if r.status_code == requests.codes.ok: 
             return parsed_json
         else: return False
+    
     
     def invalidate_task(self, list_id, task_id):
         """invalidate Task Status
@@ -469,7 +460,6 @@ class user_account:
         else: return False
         
     
-    
     def delete_task(self, list_id, task_id):
         """Delete
             
@@ -486,8 +476,6 @@ class user_account:
             return parsed_json
         else: return False
         
-
-
 
 #### Notes ####
 
@@ -511,6 +499,7 @@ class user_account:
             return parsed_json
         else: return False
         
+        
     def add_note(self, list_id, task_id, comment):
         """Add a note to a task
         
@@ -532,6 +521,7 @@ class user_account:
             return parsed_json
         else: return False
 
+
     def update_note(self, list_id, task_id, note_id, comment):
         """Update a specific note.
         
@@ -552,6 +542,7 @@ class user_account:
         if r.status_code == requests.codes.ok: 
             return parsed_json
         else: return False
+
 
     def delete_note(self, list_id, task_id, note_id):
         """Delete a specific note. 
