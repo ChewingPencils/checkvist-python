@@ -6,7 +6,7 @@ The purpose for this project was to create a wrapper that could be used conventi
 
 ## Installation ##
 
-Currently, the wrapper is only available on gitHub. After using it for a couple more weeks, I submit it to pypi. In order to use the wrapper with an application like Keyboard Maestro, use a shell script action with the following:
+Currently, the wrapper is only available on gitHub. After using it for a couple more weeks, I'll submit it to pypi. You can place it in any directory in your path and import as usual. To use the wrapper with an application like Keyboard Maestro, use a shell script action with something like the following:
 
     #!/usr/bin/env python
     
