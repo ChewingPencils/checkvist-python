@@ -18,7 +18,7 @@ Currently, the wrapper is only available on GitHub. After using it for a few mor
     remote_key = '' 	# Enter remote key
     
     # Import workaround for Keyboard Maestro
-    checkvist = imp.load_source('checkvist', '/Volumes/MacintoshHD/skorzdorfer/unix/bin/checkvist.py')
+    checkvist = imp.load_source('checkvist', '/path/to/checkvist.py')
     
     # Create instance
     cl = checkvist.user_account(username, remote_key, bugger=1)
