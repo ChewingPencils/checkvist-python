@@ -1,6 +1,6 @@
 # Python Wrapper for Checkvist API
 
-This is a wrapper for the [Checkvist: Open API](https://checkvist.com/auth/api). It includes all calls found in the offical documentation. Please see the source code to clarify arguments and see some basic examples.
+This is a wrapper for the [Checkvist: Open API](https://checkvist.com/auth/api). It includes all calls found in the official documentation. Please see the source code to clarify arguments and see some basic examples.
 
 This wrapper is intended to be used conventionally and with [Pythonista](https://itunes.apple.com/us/app/pythonista/id528579881?mt=8) on iOS. The optional debugger uses print statements, because they seem to perform better on iOS.
 
