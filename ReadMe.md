@@ -6,7 +6,7 @@ This wrapper is intended to be used conventionally and with [Pythonista](https:/
 
 ## Installation ##
 
-Currently, the wrapper is only available on FitHub. After using it for a few more weeks, I'll submit it to pypi. For now, you can place checkvist.py in any directory in your path and import as usual. To use the wrapper with an application like Keyboard Maestro, use a shell script action with something like the following:
+Currently, the wrapper is only available on GitHub. After using it for a few more weeks, I'll submit it to pypi. For now, you can place checkvist.py in any directory in your path and import as usual. To use the wrapper with an application like Keyboard Maestro, use a shell script action with something like the following:
 
     #!/usr/bin/env python
     
